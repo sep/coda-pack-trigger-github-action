@@ -29,6 +29,7 @@ https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/c
 
 1. Ensure to include the `repo` scope.
 2. Set the expiration to something reasonable.
+
     a. (Pro tip: set a calendar reminder a few days in advance so you don't forget to refresh it!)
 4. Store it someplace safe so you can get back to it. Github won't show it to you again after it shows it to you once!
 
