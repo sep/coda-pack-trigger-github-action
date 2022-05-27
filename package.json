@@ -1,0 +1,24 @@
+{
+  "name": "trigger-github-action",
+  "version": "1.0.0",
+  "description": "Trigger a Github Action Workflow from a Coda Action.",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "."
+  },
+  "keywords": [
+    "coda",
+    "gha",
+    "github",
+    "github-action",
+    "workflow"
+  ],
+  "author": "Jon Fuller (jcfuller@sep.com)",
+  "license": "ISC",
+  "dependencies": {
+    "@codahq/packs-sdk": "^0.12.0"
+  }
+}
