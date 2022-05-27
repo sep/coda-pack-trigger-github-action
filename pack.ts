@@ -24,9 +24,9 @@ pack.addFormula({
   parameters: [
     coda.makeParameter({
       type: coda.ParameterType.String,
-      name: "repo_with_owner",
+      name: "repo",
       description: "The name of the repo (e.g. org/repo).",
-      suggestedValue: "sep/SEPDataWarehouse"
+      suggestedValue: "owner/repo"
     }),
     coda.makeParameter({
       type: coda.ParameterType.String,
@@ -38,9 +38,9 @@ pack.addFormula({
   resultType: coda.ValueType.String,
   isAction: true,
 
-  execute: async function ([repo_with_owner, event], context) {
+  execute: async function ([repo, event], context) {
     let response = await context.fetcher.fetch({
-      url: `https://api.github.com/repos/${repo_with_owner}/dispatches`,
+      url: `https://api.github.com/repos/${repo}/dispatches`,
       method: "POST",
       headers: {
         "Accept": "application/vnd.github.v3+json",
