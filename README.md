@@ -27,9 +27,10 @@ on:
 
 https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
 
-1. Ensure to include the `user` and `repo` scopes.
-2. Set the expiration to something reasonable. (Pro tip: set a calendar reminder a few days in advance so you don't forget to refresh it!)
-3. Store it someplace safe so you can get back to it. Github won't show it to you again after it shows it to you once!
+1. Ensure to include the `repo` scope.
+2. Set the expiration to something reasonable.
+    a. (Pro tip: set a calendar reminder a few days in advance so you don't forget to refresh it!)
+4. Store it someplace safe so you can get back to it. Github won't show it to you again after it shows it to you once!
 
 ## Coda Side
 
@@ -45,4 +46,4 @@ https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/c
     * `repo_with_owner` - should be something like `your_github_username/name_of_your_repo`
     * `event` - should correspond to the values used in the `types` element of your `repository_dispatch` trigger above.
 
-      Remember: This will trigger all workflows on the repository that have a matching `repository_dispatch` event type.
+      **Remember**: This will trigger all workflows on the repository that have a matching `repository_dispatch` event type.
